@@ -1,0 +1,373 @@
+:root {
+  --primary-text-color: #2e2f42;
+  --secondary-color: #434455;
+  --accent-color: #4d5ae5;
+  --footer-logo: #f4f4fd;
+  --color-button: #fff;
+  --hover-color: #404bbf;
+  --border-color: #e7e9fc;
+}
+
+body {
+  background-color: var(--color-button);
+  font-family: "Roboto", sans-serif;
+  color: var(--primary-text-color);
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.page-header {
+  border-bottom: 1px solid var(--border-color);
+}
+
+.container {
+  width: 1158px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.header-flex{
+  display: flex;
+}
+
+.list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  text-decoration: none;
+}
+
+.main-nav {
+  display: flex;
+  align-items: center;
+}
+
+.accent-color {
+  color: var(--accent-color);
+}
+
+.logo {
+  color: var(--primary-text-color);
+  font-family: "Raleway";
+  font-weight: 800;
+  font-size: 18px;
+  padding-top: 24px;
+  padding-bottom: 24px;
+  text-transform: uppercase;
+  margin-right: 76px;
+  line-height: 1.33;
+  text-decoration: none;
+}
+
+.nav-menu {
+  display: flex;
+}
+
+.nav-menu .menu-item + .menu-item {
+  margin-left: 40px;
+}
+
+.link {
+  color: var(--primary-text-color);
+  display: block;
+  font-weight: 500;
+  padding-top: 24px;
+  padding-bottom: 24px;
+  text-decoration: none;
+}
+
+.link:hover,
+.link:focus {
+  color: var(--hover-color);
+}
+
+.link:active {
+  color: var(--accent-color);
+}
+
+.contacts-info.list {
+  display: flex;
+  margin-left: auto;
+}
+
+
+.contacts-info .contacts-item + .contacts-item {
+  margin-left: 40px;
+}
+
+.contacts {
+  color: var(--secondary-color);
+  display: block;
+  padding-top: 24px;
+  padding-bottom: 24px;
+  text-decoration: none;
+}
+
+.contacts:hover,
+.contacts:focus {
+  color: var(--hover-color);
+}
+
+.contacts:active {
+  color: var(--accent-color);
+}
+
+.banner {
+  padding-top: 188px;
+  padding-bottom: 188px;
+  background-color: var(--primary-text-color);
+  text-align: center;
+}
+
+.title-page {
+  color: var(--color-button);
+  font-weight: 700;
+  font-size: 56px;
+  width: 494px;
+  line-height: 1.07;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0;
+  margin-bottom: 48px;
+}
+
+.btn {
+  color: var(--color-button);
+  background-color: var(--accent-color);
+  font-family: "Roboto";
+  font-weight: 500;
+  padding: 16px 32px;
+  border: 1px solid var(--accent-color);
+  border-radius: 4px;
+  font-size: 16px;
+  line-height: 1.18;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: var(--hover-color);
+  color: var(--color-button);
+}
+
+.btn:focus,
+.btn:active {
+  background-color: var(--accent-color);
+}
+
+.features {
+  padding-top: 120px;
+}
+
+.features-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.features-list .features-item + .features-item {
+  margin-left: 24px;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.features-title {
+  margin-top: 0;
+  margin-bottom: 8px;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+}
+
+.features-description {
+  margin-top: 0;
+  margin-bottom: 0;
+  color: var(--secondary-color);
+}
+
+.section {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
+.works-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.works-list .list-item + .list-item {
+  margin-left: 24px;
+}
+
+.no-gap {
+  display: block;
+}
+
+.title-works {
+  margin-top: 0;
+  margin-bottom: 72px;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.11;
+  text-align: center;
+}
+
+.back {
+  background-color: var(--footer-logo);
+}
+
+.title-our-team {
+  margin-top: 0;
+  margin-bottom: 72px;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.11;
+  text-align: center;
+}
+
+.cards {
+  display: flex;
+  align-items: center;
+}
+
+.card-bg {
+  background-color: var(--color-button);
+  width: 264px;
+}
+
+.cards .card-bg + .card-bg {
+  margin-left: 24px;
+  margin-right: 0;
+}
+
+.card-contant{
+  box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08);
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+}
+
+.card-bg > .card-contant,
+.contant {
+  padding: 32px 16px;
+}
+
+.card-title {
+  font-weight: 500;
+  text-align: center;
+  font-size: 20px;
+  margin-top: 0;
+  margin-bottom: 8px;
+  line-height: 1.2;
+}
+
+.card-description {
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.footer-logo{
+  font-family: "Raleway";
+  display: block;
+  color: var(--footer-logo);
+  text-transform: uppercase;
+  font-weight: 800;
+  margin-top: 0;
+  margin-bottom: 16px;
+}
+
+.footer {
+  padding-top: 100px;
+  padding-bottom: 100px;
+  background-color: var(--primary-text-color);
+}
+
+.info {
+  width: 264px;
+  color: var(--border-color);
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 72px;
+}
+
+.buttons .btn-item + .btn-item {
+  margin-left: 24px;
+}
+
+.btn-products {
+  color: var(--accent-color);
+  background-color: var(--footer-logo);
+  font-family: "Roboto";
+  font-weight: 600;
+  font-size: 16px;
+  border: 1px solid var(--border-color);
+  padding: 12px 24px;
+  border-radius: 4px;
+  line-height: 1.5;
+  cursor: pointer;
+}
+
+.btn-products:hover,
+.btn-products:focus,
+.btn-products:active {
+  background-color: var(--hover-color);
+  color: var(--color-button);
+}
+
+.btn-products:active {
+  background-color: var(--accent-color);
+}
+
+.product {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 24px;
+  row-gap: 48px;
+}
+
+.product-item {
+  width: 360px;
+}
+
+.product-link {
+  text-decoration: none;
+}
+
+.contant {
+  border-left: 1px solid var(--border-color);
+  border-right: 1px solid var(--border-color);
+  border-bottom: 1px solid var(--border-color);
+}
+
+.title-product {
+  color: var(--primary-text-color);
+  font-weight: 500;
+  margin-top: 0;
+  margin-bottom: 8px;
+  font-size: 20px;
+  line-height: 1.2;
+}
+
+.description-product {
+  color: var(--secondary-color);
+  margin-top: 0;
+  margin-bottom: 0;
+}
